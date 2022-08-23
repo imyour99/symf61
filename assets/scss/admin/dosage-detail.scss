@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.06.2020, 09:56:56
+    Author     : holgerleitermann
+*/
+
+body.dosage.detail {
+    
+    .articleDosageOption {  
+        padding-top: 1rem;
+        border: 1px solid $input-border-color;
+        margin-bottom: 1rem;
+    }
+    
+    img.list-language-flag {
+        height: 40px;
+    }
+    
+    .tox-tinymce {
+        width: 100%;
+    }
+    
+}

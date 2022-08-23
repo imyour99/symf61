@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29.07.2019, 14:54:28
+    Author     : holgerleitermann
+*/
+
+body.administration {
+                
+    .sidebar {
+        
+        position: fixed;
+        display: block; 
+        width: 190px;
+        height: 100%;
+        visibility: visible;
+        right: auto;
+        left: 0px;
+        top: 0px;     
+        background-color: $black;
+        font-size: 1.1em;
+        padding-bottom: 30px;       
+        flex-direction: column;      
+        overflow-y: auto !important;
+        overflow-x: hidden;
+        z-index: 100;
+        
+        -webkit-transition: margin .25s ease-out;
+        -moz-transition: margin .25s ease-out;
+        -o-transition: margin .25s ease-out;
+        transition: margin .25s ease-out;
+        
+        .itemBlock::before {
+            position: absolute;
+            background-color: $whiteShare;
+            content: '';
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 1px;
+        }
+        
+        .item {
+            display: block;
+            position: relative;
+            color: $white;
+            vertical-align: middle;
+            line-height: 1;
+            text-decoration: none;
+            flex: 0 0 auto;
+            padding: 1em 1em;
+            text-transform: none;
+            font-weight: 400;
+            
+            svg {
+                margin: 2px auto;
+                width: 100%;
+            }
+            
+            .header {
+                margin: 0 0 .5em;
+                font-size: 0.9em;
+                font-weight: $font-weight-bold;
+            }
+            
+            .menu {
+                margin: .5em -1.1em 0;
+                
+                .item {
+                    display: block;
+                    padding: .4em 1.3em;
+                    font-size: .8em;
+                    position: relative;
+                    vertical-align: middle;
+                    -webkit-box-flex: 0;
+                    flex: 0 0 auto;
+                    text-transform: none;
+                    font-weight: 400;
+                    color: $whiteNavLink;
+                    transition: background .1s ease,box-shadow .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
+                    
+                    i.icon {
+                        float: right;
+                        margin: 0 0 0 .5em;
+                        opacity: .9;
+                    }
+                }
+                
+                a.item:hover,
+                .active.item {
+                    font-weight: 500;
+                    color: $white;
+                    box-shadow: none;
+                }
+            }
+        }
+        
+        a.itemHover:hover {
+            background-color: $whiteHoverBlack;
+            color: $white;
+        }
+        
+        a.itemLogo {
+            background-color: $black;
+            padding: 0;
+        }
+    }
+    
+    .content {
+        width: 100%;
+        margin-left: 190px;
+        -webkit-transition: margin .25s ease-out;
+        -moz-transition: margin .25s ease-out;
+        -o-transition: margin .25s ease-out;
+        transition: margin .25s ease-out;
+        min-width: 630px;
+        
+        .btn-black {
+            color: $white;
+            background-color: $black;
+        }
+
+        .btn-black:hover {
+            color: $white;
+            background-color: $whiteHoverBlack;
+        }
+
+        .navbarTop {
+            position: fixed;
+            background-color: $black;        
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 190px;
+            z-index: 110;
+            padding: 0rem 0rem;
+            -webkit-transition: left .25s ease-out;
+            -moz-transition: left .25s ease-out;
+            -o-transition: left .25s ease-out;
+            transition: left .25s ease-out;
+            
+            
+            .navbar-toggler  {
+                font-size: 1rem;
+            }
+            
+            .nav-item {
+                a.nav-link {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    padding-right: 0.8rem;
+                    padding-left: 0.8rem;
+                }
+                
+                a.nav-link:hover {
+                    background-color: $whiteHoverBlack;
+                }
+
+                input {
+                    font-weight: 400;
+                    border-color: transparent;
+                    background-color: transparent;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    border-radius: 0;
+                    color: $white;
+                    width: 8rem;
+                    display: inline-block;
+                }
+
+                input::placeholder {
+                    color: $whiteNavLink;
+                }
+                
+                .adminDropdown {
+                    right: 0px;
+                    left: auto;
+                    padding: 0px 0px;
+                    margin: 0px 0px 0px;
+                    
+                    a.dropdown-item {
+                        font-size: 1em;
+                        line-height: 1em;
+                        padding: 0.6rem 1.5rem;
+                        .icon {
+                            padding-right: .5rem;
+                        }
+                    }
+                    
+                    .dropdown-divider {
+                        margin: 0px 0px;
+                    }
+                }
+                
+            }
+            
+            .dropdown:hover > .adminDropdown {
+                display: block;
+            }
+            
+            #navbarTopContent.collapse.show {
+                .adminDropdown {
+                    right: auto;
+                    left: 0px;
+                }
+            }
+        }
+    }
+
+    #wrapper.toggled {
+        
+        #sidebar-wrapper {
+             margin-left: -190px;
+        }
+        
+        #content-wrapper {
+            margin-left: 0px;
+            
+            .navbarTop {
+                left: 0px;
+            }
+        }
+    }
+    
+}
+

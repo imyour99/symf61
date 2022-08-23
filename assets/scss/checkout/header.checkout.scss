@@ -1,0 +1,28 @@
+
+header.checkout {   
+    padding: 10px 0px;
+    background-color: $white;
+    border-bottom: 2px solid $borderColor;
+    
+    .navbar {
+      
+        padding: 0 1rem;
+        
+        a.navbar-brand {      
+            
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                height: 80px;
+            }
+        }  
+        
+        a.navbar-brand:hover, 
+        a.navbar-brand:focus {
+            opacity: 0.75;
+        }
+        
+    }
+    
+}

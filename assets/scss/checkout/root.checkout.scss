@@ -1,0 +1,169 @@
+body.checkOut-root  {
+    
+    h4.checkOut-title {
+        color: $black;
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+        
+    h5.checkOut-title {
+        padding: 10px 20px 10px;
+    }
+    
+    .checkOut-main-box {
+        margin-top: 25px;
+        background-color: $white;
+        
+        .checkOut-icon {
+            padding-left: 12px;
+            color: $primary;
+        }
+        
+        .checkOut-main-content {
+            padding: 20px;
+            border-top: 3px solid $haberland-lightAqua;
+            
+            .checkOut-inner-share {
+                /*border-top: 2px solid $haberland-lightAqua;*/
+                padding-top: 10px;
+                margin-top: 6px;
+            }
+            
+            .checkOut-inner-share-empty {
+                border-top: 1px solid $borderColor;
+                margin-top: 6px;
+            }
+            
+            .checkout-main-content-link {
+                width: 100%;
+                display: inline-block;
+                border-top: 1px solid $borderColor;
+                padding: 10px 0px;
+                text-align: right;
+                color: $borderColor;
+            }
+            
+            .checkOut-amazonPay-address,
+            .checkOut-amazonPay-wallet {
+                width: 100%;
+                height: 250px;
+            }
+        }
+        
+        .checkOut-main-content.checkOut-main-content-buttonBox {
+            border-top: none;
+        }
+        
+        .checkOut-main-content-result {
+
+            p {
+                margin-bottom: 26px;
+            }
+        }
+        
+        .checkOut-main-content-double {
+            border-top: 3px solid $haberland-lightAqua;
+            .ajaxBox {
+                text-align: center;
+            }
+        }
+            
+    }
+    
+    table.checkout-basket-table {
+        
+        margin-bottom: 0px;
+        
+        tbody,
+        tfoot {
+
+            td,
+            th {
+                border-top: none;
+                border-bottom: none;
+                padding: 8px 6px;
+            }
+            
+            td.checkout-border,
+            th.checkout-border {
+                border-bottom: 1px solid $borderColor;
+            }
+            
+            td.checkout-imageCell {
+                
+                padding-left: 0px;
+                
+                a.checkout-imageCell-link {
+                    display: block;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    
+                    img.checkout-imageCell-image {
+                        height: 58px;
+                    }
+                }
+                
+            }
+            
+            td.checkout-titleCell {
+                
+                .checkout-titleCell-top {
+                    font-size: $f-14;
+                    line-height: $f-18;
+                    text-transform: uppercase;
+                    height: 36px;
+                    overflow: hidden;
+                }
+                
+                .checkout-titleCell-description {
+                    font-size: 12px;
+                    line-height: $f-14;
+                    color: $borderColor;
+                    max-height: 28px;
+                    overflow: hidden;
+                }
+                
+            }
+            
+            td.checkout-priceCell,
+            th.checkout-priceCell {
+                font-size: $f-14;
+                line-height: $f-18;
+                text-align: right;
+                padding-right: 0px;
+                
+                .checkout-total {
+                    border-bottom: 3px double;
+                }
+            
+            }
+            
+            td.checkout-infoCell {
+                padding-top: 0px;
+                padding-left: 0px;
+                padding-bottom: 12px;
+                .checkout-titleCell-info {
+                    font-size: 12px;
+                    line-height: $f-14;
+                }
+            }
+            
+            th.checkout-basketCell {
+                font-size: $f-14;
+                line-height: $f-18;
+                
+                .checkout-total-tax-info {
+                    color: $borderColor;
+                }
+            }
+            
+            th.checkOut-innerCell {
+                color: $borderColor;
+                font-size: $f-12;
+            }
+                
+        }
+                
+        
+    }
+}

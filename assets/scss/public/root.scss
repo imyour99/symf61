@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.11.2021, 11:40:26
+    Author     : holgerleitermann
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;   
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    color: $fontBody;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+/*
+ * links
+ * --------------------------------------------------
+ */
+
+a {
+    color: $haberland-aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $haberland-lightAqua;
+}
+
+a:hover, 
+a:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+/*
+ * btn
+ * --------------------------------------------------
+ */
+
+.btn { 
+    letter-spacing: 0.8px;
+    display: inline-block;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+    line-height: 1.5;
+    border-radius: 0.20rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    text-transform: uppercase;
+}
+
+.btn-primary, .btn-primary:hover {
+    color: $white;
+}
+
+
+.btn-outline-gray {
+    color: $grayNav;
+    border: 1px solid $grayNav;
+}
+
+.btn-outline-gray:hover {
+    background-color: none;
+}
+
+/*
+ * section-heading-row
+ * --------------------------------------------------
+ */
+
+.section-heading-row {
+    flex-grow: 1;
+    .section-title-box {
+        padding: 50px 0 25px 0;
+        text-align: center;
+    }
+}
+
+/*
+* label
+* --------------------------------------------------
+*/
+
+label { 
+   font-size: 0.8rem;
+   font-weight: 500;
+   letter-spacing: 0.05em;
+   line-height: 1.5;
+   text-transform: uppercase;
+   margin-bottom: 3px;
+}
+
+label.checkbox-inline {
+   color: $shopLightGray !important;
+}
+ 
+/*
+ * classes
+ * --------------------------------------------------
+ */
+ 
+.display-none {
+    display: none;
+}
+
+.alertFlashbag {
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+/*
+ * modal
+ * --------------------------------------------------
+ */
+.modal-footer > * {
+    margin: 0px;
+}
+
+.modal-footer {
+    .w-50 {
+        width: 47% !important;
+    }
+}
+
+
+    

@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+body.blog.detail {
+
+    .metaDescriptionTextArea {
+        height: 8.1em;
+    }
+
+    .descriptionTextArea {
+        height: 20em;
+    }
+    
+    #blog_imageList,
+    #blog_imageListCacheFile,
+    #blog_imageDetail,
+    #blog_imageDetailCacheFile {
+        display: none;
+    }
+
+    .blog-shopResource {
+        .ms-container .ms-list{
+            height: 60px;
+        }
+    }
+
+    .blog-articleCombineResource {
+        .ms-container .ms-list {
+            height: 700px;
+            
+            span {
+                white-space: pre;
+                font-family: Consolas, monospace;
+            }
+
+        }
+    }
+
+    img.file-preview-image {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+    }
+    
+    .krajee-default.file-preview-frame {
+        width: 98%;  
+        overflow: hidden;
+        
+        .kv-file-content {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .tox-tinymce {
+        width: 100%;
+    }
+
+    .tox .tox-collection__item-label {
+        line-height: inherit !important;
+    }
+    
+}

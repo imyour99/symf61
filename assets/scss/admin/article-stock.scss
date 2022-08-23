@@ -1,0 +1,71 @@
+body.stock.list {
+
+    img.shop-flag {
+        height: 24px;
+        width: 24px;
+    }
+    
+    .shop-flag-left {
+        margin-left: 10px;
+    }
+    
+    a.targetLink {
+        color: darken($primary, 10%);
+    }
+
+    a.targetLink:hover {
+        color: $primary;
+    }
+    
+    .btn-input-toogle-left {
+        margin-left: 10px;
+    }
+    
+    .btn-input-toogle {
+        padding: 0rem 0.4rem;
+    }
+    
+    .btn-list {
+        padding: 0.1rem 0.5rem;
+        line-height: 1;
+    }
+    
+    .iconTarget {
+        color: $primary;
+    }
+    
+    #stock_articleId,
+    #stock_articleCombineId,
+    .stock_hidden {
+        display: none;
+    }
+    
+    .form-stock-hidden {
+        margin-bottom: 0px;
+    }
+    
+    .form-group-errorInfo {
+        margin-bottom: 0px;
+        
+        .help-block {
+            
+            margin-top: 0px;
+            margin-bottom: 0px;
+            
+            ul {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    .badgeStockList {
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 1000;
+        padding-top: 0.3em;
+        padding-bottom: 0.2em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+    }
+    
+}

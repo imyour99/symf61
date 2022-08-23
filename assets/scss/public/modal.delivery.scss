@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.11.2021, 13:45:14
+    Author     : holgerleitermann
+*/
+
+#modalDeliveryAimIp {
+    
+    .modal-dialog {
+        
+        max-width: 700px !important;
+        
+        a.deliveryLink {
+        
+            color: $fontBody;
+            display: block;
+            
+            @include media-breakpoint-up(xs) {
+                text-align: left;
+            }
+        
+
+            .deliveryAim-flag {
+                font-size: $f-25;
+                padding-right: 6px;
+            }
+
+            .deliveryAim-country { 
+                font-size: $f-14;
+            }
+
+        }
+    }
+    
+    .modal-footer {
+        justify-content: flex-start !important;
+    }
+}

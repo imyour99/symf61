@@ -1,0 +1,80 @@
+body.checkOut-start {
+    .checkOut-start-box {
+        
+        background-color: $white;
+        margin-top: 25px;
+        
+        .checkOut-start-box-padding {    
+            padding: 35px 35px;
+            
+            .btn-text-link {
+        
+                display: block;
+                text-align: center;
+                text-decoration: underline;
+                color: $black;
+                font-size: $f-16;
+                transition: .3s;
+                &:hover {
+                    color: $shopLightGray; 
+                    text-decoration: underline;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: $f-14;
+                    padding: 20px 0;
+                }
+            }
+            
+            .checkOut-start-box-line {
+                
+                display: block; 
+                margin-top: 2  5px;
+                margin-bottom: 42px;
+                
+                p {
+                    
+                    text-align: center; 
+                    border-bottom: 1px solid $borderColor;
+                
+                    span {
+                        background-color: $white; 
+                        position: relative; 
+                        top: 10px; 
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    .checkOut-start-payments {
+ 
+        ul.checkOut-start-payment-list {
+            list-style: none;
+            margin: 20px auto 35px auto;
+            padding: 0px 0px;
+            text-align: center;
+                
+            li  {
+                
+                list-style: none;
+                display: inline;
+                    
+                img {
+                    height: 40px;
+                    padding-right: 10px;
+                    
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 10px;
+                    }
+                }
+                
+            }
+            
+            li.payment-last {
+                img {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

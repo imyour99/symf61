@@ -1,0 +1,87 @@
+/*
+    Created on : 03.02.2022, 11:47:55
+    Author     : holgerleitermann
+*/
+
+.votesFavourites {
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+        border: none;
+        
+        .card-body {
+            
+            .card-title {
+                font-weight: bold;
+                margin-bottom: 20px;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+            
+            .card-rating {
+                margin-bottom: 20px;
+            }
+            
+            p.card-text {
+                font-size: $f-12;
+                line-height: $f-18;
+                margin-bottom: 20px;
+            }
+            
+            .voting-user {
+
+                .voting-user-left {
+                    float: left;
+                    padding-right: 15px;
+                    
+                    .voting-user-item {
+                            
+                        .voting-user-item-chip {
+                            height: 80px;
+                            width: 80px;
+                        }
+
+                        .voting-user-item-chip-img {
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .voting-user-item-chip-name {
+
+                            background-color: $primary;
+                            font-size: 0.9rem;
+                            padding-top: 3px;
+                            font-weight: 900;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: $white;
+                            border-radius: 50%;
+
+                        }
+                    }
+                }
+                
+                .voting-user-right {
+                    
+                    .voting-user-right-name {
+                        font-size: $f-14;
+                        line-height: $f-18;
+                        font-weight: bold;
+                    }
+
+                    .voting-user-right-city {
+                        font-size: $f-12;
+                        line-height: $f-18;
+                    }
+                }
+            }
+            
+        }   
+    }
+    
+}

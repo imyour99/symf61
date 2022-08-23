@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.08.2019, 10:11:38
+    Author     : holgerleitermann
+*/
+
+/*
+ * Page Info
+ * --------------------------------------------------
+ */
+
+.page-info {
+    
+    margin-bottom: .6rem;
+    
+    .page-circle {
+        border: 3px solid $grayCircle;
+        border-radius: 100%;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        position: relative;
+        margin-right: 1rem;
+        float: left;
+        
+        i {
+            vertical-align: middle;
+            padding: 17px 0px;
+        }
+    }
+    
+    .page-head {
+        
+        float: left;
+        margin-top: 0.6rem;
+        
+        h1 {
+            font-weight: $font-weight-bold;
+            margin-bottom: 0.2rem;
+        }
+        .page-head-sub {
+            font-size: 1.14rem;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: $blackLighten;
+        }
+        
+    }
+    
+    .page-action {
+        padding-top: 2rem;
+        
+        .dropdown {
+            text-align: right;
+            width: auto;
+            height: 58px;
+            
+            .dropdown-menu {
+                
+                right: 0px;
+                left: auto;
+                
+                .dropdown-item {
+                    i {
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+            
+        }
+        
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+            top: 38px;
+            right: -10px;
+        }
+        
+        
+    }
+}

@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 25.09.2020, 14:04:00
+    Author     : holgerleitermann
+*/
+
+body.order.detail {
+
+    a.targetLink {
+        color: darken($primary, 10%);
+    }
+
+    a.targetLink:hover {
+        color: $primary;
+    }
+    
+    a.downloadLink {
+        color: $primary;
+    };
+    
+    a.downloadLink:hover {
+        color: darken($primary, 10%)
+    }
+    
+    .colorPrimary {
+        color: $primary;
+    }
+    
+    .display-none {
+        display: none;
+    }
+    
+    #ordering_delivery_address_form {
+
+        ul.nav-tabs {
+            
+            margin-top: 24px;
+            
+            li.nav-item {
+            
+                text-align: center;
+                
+                a.nav-link {
+                    
+                    .ordering-delivery-address-icon {
+                        display: block;
+                        font-size: 50px;
+                    }
+                    
+                    .ordering-delivery-address-title {
+                         font-size: 14px;
+                         margin-top: 10px;
+                    }
+                }
+                
+                a.nav-link.active {
+                    color: $shopLightOrange;
+                }
+            }
+        }
+        
+        .tab-content {
+            margin-top: 15px;
+        }
+    }
+    
+    .input-group-white {
+        background-color: $whiteDirty;
+        border: 1px solid $white;
+    }
+    
+    .detail-shop-flag {
+        height: 20px;
+        width: 20px;
+    }
+    
+}

@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.11.2021, 10:41:03
+    Author     : holgerleitermann
+*/
+
+header.standard {
+    
+    .top-bar {
+        font-size: $f-12;
+        font-weight: 400;
+        color: $fontBody;
+        letter-spacing: 0.2px;
+        border-bottom: 1px solid $borderColor;
+        
+        .row {
+            
+            align-items: center;
+
+            .hotline-text {
+                text-align: center;
+                width: 100%;
+            }
+            
+            ul {
+                margin-bottom: 0;
+                padding-left: 0;
+                
+                > li {
+                    display: inline-flex;
+                    margin-right: 20px;
+                    
+                    @include media-breakpoint-down(lg) {
+                        margin-right: 10px;
+                    }
+                    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        font-size: $f-12;
+                        color: $fontBody;
+                        img {
+                            width: 15px;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+                    
+                    a.topContact {
+                        font-size: $f-14; 
+                    }
+                    
+                    a.topContact:hover, 
+                    a.topContact:focus {
+                        color: tint-color($fontBody, 50%);
+                    }
+                    
+                    a.shopSwitcher-link {
+                        
+                        display: inline-block;
+                        
+                        .shopSwitcher-box {
+                            
+                            .shopSwitcher-box-delivery {
+                                padding-right: 6px;
+                                .flag-icon {
+                                    font-size: $f-15;
+                                }
+                            }
+                        
+                            .shopSwitcher-box-language {
+                                padding-right: 6px;
+                            }                    
+
+                        }
+                        
+                        &:hover, 
+                        &:focus {
+                            .shopSwitcher-box-chevron {
+                                -ms-transform: rotate(180deg);
+                                -moz-transform: rotate(180deg);
+                                -webkit-transform: rotate(180deg);
+                                transform: rotate(180deg);
+                            }
+                        }
+    
+                            
+                    }
+                    
+                    a.shopSwitcher-link:hover, 
+                    a.shopSwitcher-link:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    .middle-bar {
+        
+        a.navbar-brand {
+            img {
+                height: 80px;
+            }
+        }
+        
+        a.nav-link {
+            opacity: 1;
+            font-size: $f-16;
+        }
+
+        .navbarUser {
+            flex: none;
+            li.nav-item:first-child {
+                margin-right: 20px;
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                left: unset;
+                right: 0px;
+            }
+        }
+
+        .navbarUserMobile {
+            .navbar-nav {
+                display: block;
+                clear: left;
+                li.nav-item {
+                    float: left;
+                }
+            }
+        }
+    
+    }
+    
+    .highlight-bar {
+        background-color: $primary;
+        color: $fontWhite;
+        
+        .carousel-indicators {
+            bottom: -24px;
+        }
+        
+        .carousel-inner {
+            .carousel-item {
+                p {
+                    
+                    font-size: $f-14;
+                    
+                    @include media-breakpoint-down(lg) {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    
+                    a {
+                        color: $fontWhite;
+                        text-decoration: underline;
+                    }
+                            
+                }
+            }
+        }
+        
+        .carousel-control-prev-icon {
+            position: absolute;
+            left: 0px;
+            width: 1rem;
+            height: 1rem;
+        }
+        
+        .carousel-control-next-icon {
+            position: absolute;
+            right: 0px;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    
+}
+
+

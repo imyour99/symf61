@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20.08.2019, 09:21:45
+    Author     : holgerleitermann
+*/
+
+body.administration.filter {
+    
+    .list-filter-searching {
+        
+        border-top: 1px solid $input-border-color;
+        border-bottom: 1px solid $input-border-color;
+        padding: 0.6rem 0rem;     
+        
+        .form-filter-searching-item {
+            
+            span {
+                font-weight: 600;
+                padding-right: 0.5rem; 
+            }
+            
+            float: left;
+            font-size: 0.9rem;
+            padding: 0rem 0.6rem;
+        }
+    }
+    
+    .list-form-elements {
+        border-bottom: 1px solid $input-border-color;
+        margin-top: 0.6rem;
+    }
+}

@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.07.2019, 10:53:23
+    Author     : holgerleitermann
+*/
+
+html, 
+body {
+    height: 100%;
+    background-color: $gray-100;
+}
+
+body.administration {
+    .content-container {
+        padding-top: 54px;
+    }
+}
+
+/*
+ * label
+ * --------------------------------------------------
+ */
+h5.headlineBorder {
+    width: 100%;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid $input-border-color;
+    margin-bottom: 0.6rem;
+}
+
+/*
+ * label
+ * --------------------------------------------------
+ */
+label {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 0.9em;
+    
+    a {
+        color: $success;
+    }
+    
+    a:hover {
+        color: $success;
+    }
+}
+
+label.labelStroke {
+    text-decoration: line-through;
+}
+
+/*
+ * alert
+ * --------------------------------------------------
+ */
+.alert {
+    margin-bottom: 1.4rem;
+}
+
+/*
+ * hidden
+ * --------------------------------------------------
+ */
+.hidden { 
+    display: none;
+}
+
+/*
+ * Tab
+ * --------------------------------------------------
+ */
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+    font-size: $h5-font-size;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.nav-tabs button.nav-link {
+    color: $blackLighten;
+}
+
+.nav-tabs a.nav-link.active {
+    color: $nav-tabs-link-active-color;
+    background-color: $nav-tabs-link-active-bg;
+}
+
+/*
+ * fileInput
+ * --------------------------------------------------
+ */
+.file-input {
+    width: 100%;
+}
+
+/*
+ * btn
+ * --------------------------------------------------
+ */
+.btn-iconLeft {
+    i {
+        margin-right: 0.8rem;
+    }
+    span.languageFlag {
+        img {
+            height: 12px;
+        }
+    }
+    span.mediaFlag {
+        i {
+            margin-right: 0rem;
+        }
+    }
+}
+
+.btn-marginRight {
+    margin-right: 0.8rem;
+}
+
+.btn-marginLeft {
+    margin-left: 0.8rem;
+}
+
+.btn-extraSmall {
+    padding: 0.1rem 0.5rem;
+}
+
+/*
+ * width
+ * --------------------------------------------------
+ */
+
+.width-100 {
+    width: 100%;
+}
+
+/*
+ * list
+ * --------------------------------------------------
+ */
+
+.badge-list {
+    padding: 0.8em 1.6em;
+}
+
+span.shareIT {
+    padding-left: 4px;
+    padding-right: 4px;
+    color: $input-border-color;
+}

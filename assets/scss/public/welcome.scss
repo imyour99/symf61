@@ -1,0 +1,30 @@
+
+body.welcome {
+    
+    .welcome-container {
+        padding-bottom: 55px;
+        min-height: 600px;
+    }
+      
+    .btn-text-link {
+        
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+        text-decoration: underline;
+        color: $black;
+        font-size: $f-12;
+        transition: .3s;
+        &:hover {
+            color: $shopLightGray; 
+            text-decoration: underline;
+        }
+        @include media-breakpoint-up(sm) {
+            font-size: $f-15;
+            padding: 20px 0;
+        }
+    }
+
+    
+}
+

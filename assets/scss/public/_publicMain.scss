@@ -1,0 +1,39 @@
+// BOOTSTRAP
+@import "../bootstrap/colors.scss";
+@import "../bootstrap/fontSize.scss";
+@import "./bootstrap.scss";
+
+// FONTAWSOME
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Flag Icon Set
+@import "~flag-icon-css/sass/flag-icon.scss";
+
+// SHOP PUBLIC Main
+@import "./root.scss";
+@import "./form.scss";
+
+// SHOP PUBLIC Moduls
+@import "./header.standard.scss";
+@import "./footer.standard.scss";
+@import "./modal.shopSwitcher.scss";
+@import "./modal.delivery.scss";
+@import "./breadcrumb.scss";
+@import "./banner.top.scss";
+@import "./banner.middle.scss";
+@import "./banner.bottom.scss";
+@import "./landing.scss";
+@import "./article.list.scss";
+@import "./article.badge.scss";
+@import "./article.detail.scss";
+@import "./blog.landing.favourites.scss";
+@import "./blog.list.scss";
+@import "./blog.detail.scss";
+@import "./welcome.scss";
+@import "./vote.landing.isDasboard.scss";
+@import "./account.scss";
+@import "./basket.scss";
+@import "./staticPage.scss";

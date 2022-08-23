@@ -1,0 +1,4 @@
+initArticleVariantList = function () {
+    
+    
+};

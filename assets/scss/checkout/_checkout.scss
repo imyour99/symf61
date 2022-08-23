@@ -1,0 +1,26 @@
+// BOOTSTRAP
+@import "../bootstrap/colors.scss";
+@import "../bootstrap/fontSize.scss";
+@import "./bootstrap.scss";
+
+// FONTAWSOME
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Flag Icon Set
+@import "~flag-icon-css/sass/flag-icon.scss";
+
+// SHOP PUBLIC Main
+@import "../public/root.scss";
+@import "../public/form.scss";
+
+// SHOP Checkout Moduls
+@import "../public/breadcrumb.scss";
+@import "./header.checkout.scss";
+@import "./footer.checkout.scss";
+@import "./start.checkout.scss";
+@import "./address.checkout.scss";
+@import "./root.checkout.scss";
+@import "./success.checkout.scss";

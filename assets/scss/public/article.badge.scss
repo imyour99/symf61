@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 09.12.2021, 14:10:44
+    Author     : holgerleitermann
+*/
+
+.cardList .card,
+#articleDetail-gallery {
+        
+    .card-bookmark {
+        position: absolute;
+        z-index: 9;
+        cursor: pointer;
+        padding: 4px 8px;
+        left: 7px;
+        top: 7px;
+
+        svg {
+            width: 25px;
+        }
+
+        svg > path {
+            fill: none;
+            stroke: $borderColor;
+        }
+
+        .favorite > path {
+            fill: $haberland-aqua !important;
+            stroke: $haberland-aqua !important;
+        }
+
+    }
+        
+    .badge {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 16px 32px;
+        text-transform: uppercase;
+        font-size: $f-14;
+        font-weight: bold;
+        border-radius: 0.15rem;
+        left: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .badge.classPrimary {
+        background: $primary;
+        color: $white;
+    }
+
+    .badge.classWhite {
+        background: $white;
+        color: $fontBody;
+    }
+
+    .badge.classBlack {
+        background: $fontBody;
+        color: $white;
+    }
+
+    .badge.classGreen {
+        background: $shopLightGreen;
+        color: $white;
+    }
+
+    .badge.classGrey {
+        background: $shopLighterGray;
+        color: $white;
+    }
+
+    .badge.classPurple {
+        background: $shopPurple;
+        color: $white;
+    }
+
+    .badge.classTurquoise {
+        background: $shopTurquoise;
+        color: $white;
+    }
+    
+    .badge.classRed {
+        background: $redNav;
+        color: $white;
+    }
+    
+}

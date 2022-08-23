@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.09.2019, 08:30:07
+    Author     : holgerleitermann
+*/
+
+body.article.detail {
+    
+    .article-basic-shopResource {
+        .ms-container .ms-list{
+            height: 60px;
+        }
+    }
+    
+    .article-basic-categoryResource {
+        .ms-container .ms-list{
+            height: 300px;
+        }
+    }
+    
+    .article-basic-variantResource {
+        .ms-container .ms-list{
+            height: 140px;
+        }
+    }
+    
+    .article-basic-benefitResource {
+        .ms-container .ms-list{
+            height: 180px;
+        }
+    }
+    
+    .article-basic-howtoResource {
+        .ms-container .ms-list{
+            height: 180px;
+        }
+    }
+
+    .shortDescriptionTextArea {
+        height: 4.1em;
+    }
+    
+    .metaDescriptionTextArea {
+        height: 8.1em;
+    }
+    
+    .form-button-box {
+        padding: 12px 0px 35px 10px;
+    }
+    
+    .articlePriceOptionBox {
+        padding-top: 1rem;
+        border: 1px solid $input-border-color;
+        margin-bottom: 1rem;
+    }
+    
+    .article-variant-tagResource {
+        .ms-container .ms-list{
+            height: 220px;
+        }
+    }
+    
+    img.file-preview-image {
+        width: 200px;
+    }
+    
+    .tox-tinymce {
+        width: 100%;
+    }
+
+    .tox .tox-collection__item-label {
+        line-height: inherit !important;
+    }
+
+}

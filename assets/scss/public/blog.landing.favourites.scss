@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.12.2021, 10:10:28
+    Author     : holgerleitermann
+*/
+
+body.landing {
+    
+    .blogFavourites {
+        
+        padding: 10px 0 25px 0;
+        
+        a.card-image-link {
+            display: block;
+            
+            img {
+                width: 100%;
+                transition: .3s;
+            }
+        
+        }     
+        
+        .card-body  {
+            background-color: $whiteSmoke2;
+            
+            a.card-title {
+                display: block;
+                color: $fontBody;
+                font-size: $f-16;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            
+            p.card-text {
+                font-size: $f-12;
+                line-height: $f-18;
+                margin-bottom: 16px;
+                -webkit-line-clamp: 3;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+            
+            .card-time {
+                color: $haberland-aqua;
+                img {
+                    width: 20px;
+                    margin-right: 8px;
+                }
+                span {
+                    font-size: $f-12;
+                }
+            }
+        }
+        
+    }
+    
+}

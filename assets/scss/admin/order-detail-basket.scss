@@ -1,0 +1,267 @@
+body.order.detail {
+    
+    .cartList  {
+        
+        margin-top: 10px;
+        
+        .cartList-row {
+            
+            display: table;
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid $borderColor;
+            
+            
+            .cartList-row-cell {                                                    
+                display: table-cell;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            
+            .imageCell {
+                
+                vertical-align: top;
+                width: 160px;
+                   
+                a.cartList-row-imageCell-link {
+                  
+                    display: block;
+
+                    img.cartList-row-imageCell-image {
+                        width: 100%; 
+                        min-width: 50px;
+                        max-width: 130px;
+                    }
+                    
+                }
+                
+            }
+            
+            .titleCell {
+
+                vertical-align: top;
+                width: calc(100% - 160px - 110px - 120px);
+                
+                .titleCell-top {
+                    
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    
+                    a.titleCell-title-link {
+                        display: block;
+                        font-size: $f-16;
+                        line-height: $f-22;
+                        text-transform: uppercase;
+                        color: $primary;
+                
+                    }
+                    
+                }
+                
+                .titleCell-left {
+                    
+                    float: left;
+                    
+                    .titleCell-option {
+                        font-size: $f-14;
+                        line-height: $f-16;
+                        margin-bottom: 4px;
+                    }      
+                    
+                    .titleCell-middle {                     
+                        color: $borderColor;
+                        font-size: $f-14;
+                        line-height: $f-16;
+                        margin-bottom: 8px;
+                    }
+
+                }
+                
+                .titleCell-right {
+                    
+                    float: left;
+                    padding-left: 70px;
+                    
+
+                    .removeCell {
+                        
+                        white-space: nowrap;
+                        text-align: center; 
+
+                        .btn-delete {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            font-size: $f-11;
+                            color: $shopLightGray;
+
+                            display: inline-block;
+                            height: 100%;
+                            vertical-align: middle;
+
+                            img {
+                                width: 18px;
+                                vertical-align: middle;
+                                border-style: none;
+                            }
+
+                        }
+                        
+                    }
+                    
+                }
+                
+                .titleCell-bottom {
+                    font-size: $f-13;
+                    line-height: $f-16;
+                }
+                
+                
+            }
+            
+            .qtyCell {
+                
+                text-align: center;
+                vertical-align: top;
+                width: 120px;
+                font-size: $f-14;
+                line-height: $f-16;
+
+            }
+            
+            .sumCell {
+                width: 140px;
+                vertical-align: top;
+                text-align: right;
+
+                .sumCell-price {
+                    font-size: $f-16;
+                    line-height: $f-18;
+
+                }
+            }
+            
+            .infoCell {
+                width: calc(100% - 140px);
+                font-size: $f-14;
+                line-height: $f-16;
+            }
+            
+            
+        }
+        
+        .cartList-row-noBorder {
+            border-bottom: none;
+            
+            .cartList-row-cell {                                                    
+                padding-bottom: 0px;
+            }
+            
+        }
+        
+        .cartList-row-head {
+            font-size: $f-16;
+            color: $shopLightGray;
+            text-transform: uppercase;
+            
+        }
+    }
+    
+    
+    
+    .cartCalculation {
+        
+        margin-top: 25px;
+        margin-bottom: 35px;
+        
+        .cartCalculation-left {
+            
+            margin-bottom: 25px;
+            
+            p {
+                margin-bottom: 4px;
+                .padding-icon {
+                    padding-right: 10px;
+                }
+            }
+            
+            .cartCalculation-left-discount {
+                width: 250px;
+                
+                .buttonDiscount {
+                    margin-left: 10px;
+                }
+            }
+            
+        }
+        
+        .cartCalculation-right {
+            
+            width: 100%;
+            position: relative;
+            font-size: $f-14;
+            font-weight: bold;
+            color: $shopLightGray;
+            margin-bottom: 25px;
+            
+            .cartCalculation-row {
+                
+                padding-bottom: 8px;
+                
+                .cartCalculation-cell {
+                    box-sizing: border-box;
+                }
+
+                .cartCalculation-info {
+                    width: calc(100% - 140px);
+                    float: left;
+                    text-align: right;
+                }
+
+                .cartCalculation-price {
+                    width: 140px;
+                    text-align: right;
+                    float: right;
+                    padding-right: 15px;
+                }
+                
+                .cartCalculation-price-info {
+                    width: 100%;
+                    text-align: right;
+                    padding-right: 15px;
+                }
+            }
+            
+            .cartCalculation-row-total {
+                font-size: $f-16;
+                padding-bottom: 4px;
+                
+                .cartCalculation-info {
+                    
+                }
+                
+                .cartCalculation-price {
+                    border-bottom: 3px double;
+                }
+            }
+            
+            
+        }
+        
+        .basketAction {
+            
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            a {
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 16px;
+                
+            }
+        }
+    }
+    
+    
+}

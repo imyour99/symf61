@@ -1,0 +1,52 @@
+body.account {
+    
+    .accountNavbar {
+        position: relative;
+        padding: .5rem 1rem;
+        margin-bottom: 20px;
+        
+        ul {
+            > li {
+                a {
+                    font-size: $f-16;
+                }
+            }
+        }
+                        
+    }
+    
+    table.table {
+        
+        margin-top: 20px;
+        
+        th,
+        td {
+            padding: 0.3rem;
+        }
+        
+        th {
+            font-size: $f-16;
+        }
+        
+        td {
+            font-size: $f-14;
+        }
+        
+    }
+    
+    .orderDetailPay,
+    .orderDetailData,
+    .orderDetailRequestFeedback {
+        margin-top: 30px;
+    }
+    
+    .orderDetailPay,
+    .orderDetailData,
+    .orderDetailRequestFeedback {
+        margin-bottom: 30px;
+    }
+    
+    .orderInformations {
+        text-align: right;
+    }
+}

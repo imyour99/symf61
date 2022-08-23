@@ -1,0 +1,68 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.03.2020, 13:11:12
+    Author     : holgerleitermann
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.09.2019, 13:55:07
+    Author     : holgerleitermann
+*/
+
+body.order.list {
+    .form-select {
+        
+        padding: 0px 0px;
+        
+        .form-select-list {
+            /*padding: 0.25rem 0.5rem;*/
+        }
+    }
+    
+    a.targetLink {
+        color: darken($primary, 10%);
+    }
+    
+    a.targetLink:hover {
+        color: $primary;
+    }
+    
+    a.downloadLink {
+        color: $primary;
+    };
+    
+    a.downloadLink:hover {
+        color: darken($primary, 10%)
+    }
+    
+    .orderShipmentIsDeleted {
+        font-size: 17px;
+        color: $red;
+    }
+    
+    .orderMessageIcon {
+        color: $red;
+    }
+    
+    .form-select-status {
+        //width: 140px;
+    }
+    
+    .btn-shippingCode {
+        
+        padding: 0.15rem 0.5rem;
+        
+        .badge {
+            padding: 0.15em 0.4em;
+        }
+    }
+}

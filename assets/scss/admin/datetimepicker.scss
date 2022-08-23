@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.11.2019, 08:52:39
+    Author     : holgerleitermann
+*/
+
+.xdsoft_datetimepicker {
+    
+    font-family: Lato;
+    
+    .xdsoft_calendar {
+        
+        th, td {
+            border: 1px solid #ced4da;
+            background: #fff;
+            color: #555;
+        }
+        
+        th {
+            background: #343a40;
+            color: #fff;
+        }
+        
+        td {
+            
+            &:hover {
+                background: #cfcfcf !important;
+            }
+            
+            &.xdsoft_today {
+                font-weight: bold;
+            }
+            
+            &.xdsoft_current {
+                color: #fff;
+            }
+        }
+    }
+    
+    .xdsoft_timepicker .xdsoft_time_box >div > div:hover {
+        background: #cfcfcf !important;
+    }
+    
+    .xdsoft_calendar td.xdsoft_default,
+    .xdsoft_calendar td.xdsoft_current,
+    .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+        background: #343a40 !important;
+        box-shadow: #343a40 0 1px 3px 0 inset !important;
+    }
+    
+    .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
+        background: #cfcfcf !important;
+    }
+    
+    .xdsoft_label > .xdsoft_select >div > .xdsoft_option .xdsoft_current {
+        background: #343a40 !important;
+        box-shadow: #343a40 0 1px 3px 0 inset !important;
+    }
+}

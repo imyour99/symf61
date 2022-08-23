@@ -1,0 +1,61 @@
+// BOOTSTRAP
+@import "../bootstrap/colors.scss";
+@import "../bootstrap/fontSize.scss";
+@import "./bootstrap.scss";
+@import "~bootstrap-fileinput/scss/fileinput";
+
+// FONTAWSOME
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Flag Icon Set
+@import "~flag-icon-css/sass/flag-icon.scss";
+
+// Devextreme
+//@import '~devextreme/scss/bundles/dx.common.scss';
+//@import '~devextreme/scss/bundles/dx.light.scss';
+
+//Swiper
+@import '~swiper/scss';
+
+// SHOP ADMIN Main
+@import "./root.scss";
+@import "./sidebar.scss";
+@import "./pageInfo.scss";
+@import "./breadcrumb.scss";
+@import "./list-filter.scss";
+@import "./paginator.scss";
+@import "./tablesorter.scss";
+@import "./form.scss";
+@import "./multi-select.scss";
+@import "./datetimepicker.scss";
+
+// SHOP ADMIN Moduls
+@import "./dashboard.scss";
+@import "./variant-detail.scss";
+@import "./tag-detail.scss";
+@import "./article-detail.scss";
+@import "./article-stock.scss";
+@import "./benefit-list.scss";
+@import "./benefit-detail.scss";
+@import "./learning-list.scss";
+@import "./learning-detail.scss";
+@import "./dosage-detail.scss";
+@import "./articleFaq-detail.scss";
+@import "./howto-list.scss";
+@import "./howto-detail.scss";
+@import "./highlight-detail.scss";
+@import "./banner-detail.scss";
+@import "./staticPage-detail.scss";
+@import "./blog-detail.scss";
+@import "./coupon-detail.scss";
+@import "./workshop-detail.scss";
+@import "./user-detail.scss";
+@import "./order-list.scss";
+@import "./order-detail.scss";
+@import "./order-detail-basket.scss";
+@import "./articleVote-list.scss";
+@import "./articleVote-detail.scss";
+@import "./marketing.scss";

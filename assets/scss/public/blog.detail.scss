@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.12.2021, 10:46:16
+    Author     : holgerleitermann
+*/
+
+body.blogDetail {
+    
+    .blogDetailContainer {
+        padding-bottom: 0px;
+    }
+    
+    .blogDetailTextContainer {
+        background-color: $white;
+        margin-top: -60px;
+        padding: 15px 25px;
+    }
+    
+    .blog-cats {
+        margin-top: 30px;
+        
+        a {
+            color: $black;
+        }
+        
+        .blogDetailTextCategory {
+            font-size: $f-15; 
+            font-weight: bold;
+            
+            p {
+                color: $haberland-aqua;
+            }
+        }
+        
+
+        a.blog-detail-link {
+            font-size: $f-14;
+            display: block;
+             -webkit-line-clamp: 4;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+        
+    }
+    
+    .blog-cats-mobile {
+        padding-bottom: 40px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        
+        .blogDetailContainer {
+            padding-bottom: 20px;
+        }
+        
+        .blogDetailTextContainer {
+            margin-top: -90px;
+            padding: 5px 15px;
+        }
+        
+    }
+}

@@ -1,0 +1,143 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17.10.2019, 10:52:10
+    Author     : holgerleitermann
+*/
+
+footer.standard {
+    
+    .top-bar {
+        
+        background-color: $borderColor;
+        text-align: center;
+        
+        .chevronElement {
+            color: $fontWhite;
+            font-size: $f-25;
+            cursor: pointer;
+        }
+        
+        .chevronElement:hover, 
+        .chevronElement:focus {
+            color: shade-color($fontWhite, 30%);      
+        }
+        
+    }
+    
+    .links-bar {
+        
+        background-color: $whiteSmoke;
+        
+        .links-bar-row {
+            position: relative;
+            overflow: hidden;
+            
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;                   
+            }
+                    
+            .links-bar-head {       
+                color: $fontBody;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 14px;
+                
+                @include media-breakpoint-down(sm) {
+                    position: relative;   
+                    cursor: pointer;                 
+                }
+                    
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid $primary;
+                    right: 12px;
+                    top: 12px;
+                    transform: translateY(-50%) rotate(45deg);
+                    border-top: 0;
+                    border-left: 0;
+                    transition: .3s;
+                    display: none;
+                    margin-top: -5px;
+                    @include media-breakpoint-down(md) {
+                        display: block;                    
+                    }
+                }
+            }
+            
+            
+            .links-bar-payment {
+                color: $fontBody;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 14px;
+            }
+            
+            .links-bar-default {
+                a.nav-link {
+                    padding: 4px 0px;
+                    color: $fontBody;
+                    opacity: 0.55;
+                }
+                
+                a.nav-link:hover, 
+                a.nav-link:focus {
+                    opacity: 0.7;
+                }
+                
+                a.nav-link.active { 
+                    opacity: 0.9;
+                } 
+            }
+            
+            .links-bar-social {
+                
+                display: inline;
+                    
+                li.nav-item {
+                    display: inline;
+                    transition: .3s;
+                    float: left;
+                    margin-right: 12px;       
+                }
+                
+                li.nav-item-last {
+                    float: none;
+                    margin-right: 0px;
+                }
+                   
+                i.fab {
+                    display: inline-block;
+                    border-radius: 60px;
+                    box-shadow: 0px 0px 2px $haberland-aqua;
+                    padding: 0.5em 0.6em;
+                }
+                
+                li.payment-item {
+                    padding-bottom: 12px;
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+            
+            hr.links-line {
+                height: 1px;
+                border-width: 0;
+                color: $white;
+                background-color: $haberland-aqua;
+                margin-top: 1.0rem;
+                margin-bottom: 1.0rem;
+            }
+        }
+    }
+    
+}

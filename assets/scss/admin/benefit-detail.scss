@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04.09.2019, 08:13:24
+    Author     : holgerleitermann
+*/
+
+body.benefit.detail {
+    
+    .articleBenefitOption {  
+        padding-top: 1rem;
+        border: 1px solid $input-border-color;
+        margin-bottom: 1rem;
+    }
+    
+    img.list-language-flag {
+        height: 40px;
+    }
+
+    .descriptionTextArea {
+        height: 5.9em;
+    }
+    
+    #benefit_imgFile,
+    #benefit_cacheFile {
+        display: none;
+    }
+}

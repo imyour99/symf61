@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09.09.2019, 09:07:18
+    Author     : holgerleitermann
+*/
+
+
+body.howto.detail {
+    
+    .articleBenefitOption {  
+        padding-top: 1rem;
+        border: 1px solid $input-border-color;
+        margin-bottom: 1rem;
+    }
+    
+    img.list-language-flag {
+        height: 40px;
+    }
+
+    .descriptionTextArea {
+        height: 5.9em;
+    }
+    
+    #howto_imgFile,
+    #howto_cacheFile {
+        display: none;
+    }
+    
+    .krajee-default.file-preview-frame .kv-file-content {
+        width: 225px;
+    }
+}

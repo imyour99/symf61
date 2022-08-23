@@ -1,0 +1,419 @@
+/*
+    Created on : 04.02.2022, 07:15:53
+    Author     : holgerleitermann
+*/
+
+body.articleDetail {
+    
+    .articleSection {
+        padding: 50px 0px 50px;
+    }
+    
+    .greySection {
+        
+        background-color: $whiteSmoke2;
+        
+        .card {
+            background-color: $white;
+        }
+        
+        .votingOverview-box,
+        .votingOverview-comment-item {
+            background-color: $white;
+        }
+    }
+    
+    .whiteSection {
+        
+        background-color: $white;
+        
+        .card {
+            background-color: transparent;
+        }
+        
+        .votingOverview-box,
+        .votingOverview-comment-item {
+            background-color: $whiteSmoke2;
+        }
+    }
+    
+    .articleDetail-basic {
+        
+        .articleDetail-basic-image {
+            
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            
+            .slider-nav-sm.slider-nav-outside-expand .slider-nav.slider-nav-next {
+                margin-right: -2.5rem;
+            }
+            
+            .slider-nav-sm.slider-nav-outside-expand .slider-nav {
+                margin-left: -2.5rem;
+            }
+
+            img.articleDetail-gallery-thumbs {
+                cursor: pointer;
+            }
+            
+            p {
+                margin-bottom: 8px;
+            }
+            
+            .articleDetail-basic-rating-box {
+                    
+                display: flex;
+                margin-top: 0px;
+                margin-bottom: 8px;
+
+                .articleDetail-basic-rating {
+                    margin-right: 10px;
+                }
+
+                a.articleDetail-basic-rating-link {
+                    display: block;
+                    padding-top: 1px;
+                }
+
+            }
+                
+            ul.slider-container {
+                padding-bottom: 16px;
+            }
+            
+            .slider-nav-round .slider-nav::before, 
+            .slider-nav-square .slider-nav::before {
+                display: none;
+            }
+            
+            .slider-nav-round .slider-nav::after, 
+            .slider-nav-square .slider-nav::after {
+                display: none;
+            }
+
+        }
+            
+        .articleDetail-basic-option {
+            
+            background-color: $white;
+            
+            
+            ul#articleDetail-basic-option-tab li.nav-item button.nav-link {
+                position: relative;
+            }
+
+            button.nav-link.active:after {
+                content: "";
+                position: absolute;
+                bottom: -21px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                border: 10px solid transparent;
+                border-top-color: $primary;
+           }
+       
+            
+            
+            .tab-content {
+                padding: 30px 15px 20px;
+                
+                .tab-pane {
+                    
+                    .articleDetail-basic-option-member-priceBox {
+                        text-align: right;
+                        padding: 0px 10px 22px 10px;
+                        display: none;
+                        
+                        .articleDetail-basic-option-member-priceBox-priceInfo {
+                            font-size: $f-14;
+                            line-height: $f-14;
+                            padding-bottom: 6px;
+                        }
+                        
+                        .articleDetail-basic-option-member-priceBox-price {
+                            font-size: $f-24;
+                            line-height: $f-24;
+                            padding-bottom: 6px;
+                        }
+                        
+                        .articleDetail-basic-option-member-priceBox-mwst {
+                            color: $primary;
+                            font-size: $f-12;
+                            line-height: $f-12;
+                        }
+                        
+                    }
+                    
+                    .articleDetail-basic-option-priceInfo {
+                        text-align: right;
+                        padding-bottom: 10px;
+                        padding-right: 10px;
+                    }
+
+                    .articleDetail-basic-option-price-box {
+                        display: flex;
+                        font-size: $f-16;
+                        line-height: $f-16;
+                        justify-content: right;
+                        overflow: hidden;
+                        white-space: pre-wrap;
+
+                        .articleDetail-basic-option-oldPrice {   
+                            border-top: 1px solid $shopGray;
+                            padding-top: 10px;
+                            text-align: right;
+                            padding-left: 10px;
+                            padding-right: 5px;
+                            span {
+                                text-decoration: line-through;
+                            }
+                        }
+
+                        .articleDetail-basic-option-price {
+                            border-top: 1px solid $shopGray;
+                            padding-top: 10px;
+                            color: $primary;
+                            text-align: left;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+
+                        .articleDetail-basic-option-mwst {
+                            border-top: 1px solid $shopGray;
+                            padding-top: 10px;
+                            color: $shopGray;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+                
+                .tab-pane:not(.preset) {
+                    .articleDetail-basic-option-priceInfo,
+                    .articleDetail-basic-option-price-box,
+                    .articleDetail-basic-option-member-priceBox {
+                        display: none !important;
+                    }
+                }
+
+            }
+        }
+        
+        .articleDetail-basic-option-info {
+            
+            border-bottom: 1px solid $shopGray;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            
+            img.articleDetail-basic-option-info-icon {
+                height: 36px;
+                margin-right: 16px;
+                padding-top: 10px;
+            }
+            
+            p {
+                margin-bottom: 0px;
+            }
+        }
+        
+        .articleDetail-basic-option-info-box .articleDetail-basic-option-info:last-child {
+            border-bottom: none;
+        }
+            
+    }
+    
+    .article-description-ingedient {
+        
+        ul#article-description-ingedient li.nav-item button.nav-link {
+            position: relative;
+        }
+        
+        button.nav-link.active:after {
+            content: "";
+            position: absolute;
+            bottom: -21px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border: 10px solid transparent;
+            border-top-color: $primary;
+       }
+
+        .tab-content {
+            padding: 30px 4px 4px 4px;
+        }
+    }
+    
+    .article-benefits,
+    .article-learnings,
+    .article-howTo,
+    .artilce-blog {
+        .card {
+            border: none;
+        }
+    }
+    
+    .article-benefits {   
+        .card {
+            img {
+                width: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+    .article-learnings {
+        .card {
+            img {
+                width: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+    .article-howTo {
+        .card {
+            img {
+               width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    
+    .artilce-blog {   
+        .card {
+            p.card-text {
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+            }
+
+        }
+    }
+    
+    .articleVotingsOverview {
+        
+        .votingOverview-box {
+            
+            padding: 20px;
+            
+            .votingOverview-headline {
+                text-align: center;
+            }
+            
+            .votingOverview-row {
+                display: flex;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                
+                .votingOverview-row-label {         
+                    flex: 0 0 80px;
+                    overflow: hidden;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                }
+                
+                .votingOverview-row-progress {
+                    flex: 0 0 calc(100% - 154px);
+                }
+                
+                .votingOverview-row-perCent {
+                    flex: 0 0 74px;
+                    overflow: hidden;
+                    font-size: 1rem;
+                    line-height: 1.2;
+                    padding-left: 10px;
+                    color: $gray-400;
+                }
+            }
+            
+        }
+        
+        .votingOverview-comment {
+            
+            margin-top: 40px;
+            
+            .votingOverview-comment-item {
+                padding: 20px;
+                margin-bottom: 20px;
+                position: relative;
+                
+                .votingOverview-comment-item-chip {
+                    position: absolute;
+                    left: 20px;
+                    top: -15px;
+                    height: 30px;
+                    width: 30px;
+                }
+                
+                .votingOverview-comment-item-chip-name {      
+                    background-color: $primary;
+                    font-size: 0.9rem;
+                    padding-top: 3px;
+                    font-weight: 900;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $white;
+                    border-radius: 50%;
+                }
+                
+                .votingOverview-comment-item-chip-img img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                
+                .votingOverview-comment-item-top {
+                    display: flex;
+                    line-height: 1.3;
+                    
+                    .votingOverview-comment-top-rating {
+                        flex: 0 0 100px;
+                    }
+                    .votingOverview-comment-top-info {
+                        
+                        flex: 0 0 calc(100% - 110px);
+                        padding-left: 10px;
+                        font-size: 0.9rem;
+                        padding-top: 5px;
+                        font-weight: 900;
+                        
+                        span {
+                            padding-left: 10px;
+                            font-weight: 500;
+                            color: $gray-400;
+                        }
+                    }
+                }
+                
+                .votingOverview-comment-item-comment {
+                    font-size: 0.9rem;
+                    line-height: 1.3;
+                    padding-top: 8px;
+                }
+            }
+            
+        }
+        
+        .votingOverview-button {
+            margin-top: 20px;
+        }
+    }
+    
+    .articleFaq-item {
+        
+        p {
+            margin-bottom: 0px;
+        }
+        
+        .articleFaq-item-question {
+            font-weight: 900;
+        }
+    }
+}

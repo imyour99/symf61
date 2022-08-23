@@ -1,0 +1,37 @@
+ul.breadcrumb {
+    
+    -webkit-font-smoothing: antialiased;
+    font-size: 14pt !important;
+    color: $fontBody;
+    background-color: transparent;
+    list-style: outside none none;
+    border-radius: 0px;
+    padding: 20px 0 !important;
+    
+    li {
+        padding-right: 10px;
+
+        a {
+            font-size: $f-12;
+            color: $shopLightGray;
+            text-transform: uppercase;
+        }
+
+        a:hover,
+        a:focus {
+            color: $primary;
+        }
+
+    }
+
+    li + li:before {
+        font-size: 10px;
+        color: $shopLightGray;
+        font-family: 'Font Awesome 5 Free';
+        content: "\f054";
+        padding: 0px 5px 0px 0px;
+        font-weight: 900;
+    }
+
+}
+    

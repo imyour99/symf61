@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 23.12.2021, 10:49:44
+    Author     : holgerleitermann
+*/
+
+body.blogList {
+    
+    p.subheaderText {
+        font-size: $f-20;
+        padding-bottom: 24px;
+    }
+    
+    .blogItem {
+        margin-top: 40px;
+    }
+    
+    .blogListDetailFirstColumnMargin {
+        margin-top: 20px;
+    }
+    
+    .blogListDetailColumnMargin {
+        margin-top: 15px;
+    }
+    
+    .blogListDetailInfoColumnMargin {
+        margin-top: 5px;
+    }
+    
+    .blogListInfoContainer {
+        font-size: $f-16;
+    }
+    
+    a.blog-title {
+        font-size: $f-20;
+        line-height: $f-30;
+        font-weight: bold;
+        display: block;
+        text-align: center; 
+        padding-bottom: 0px;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    
+    p.blog-text {
+        text-align: center; 
+        font-size: $f-20;
+        line-height: $f-30;
+        display: block;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    
+    .blogRowMargin {
+        margin-top: 0px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        
+        .blogItem {
+            margin-top: 0px;
+        }
+        
+        .blogRowMargin {
+            margin-top: 40px;
+        }
+    }
+    
+}
